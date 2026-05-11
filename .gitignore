@@ -1,0 +1,91 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Editors / OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*~
+
+# ---- Virtualenv ----
+.env
+.env.*
+.venv/
+venv/
+env/
+
+# ---- Notebooks ----
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ---- Experiment tracking / logs ----
+wandb/
+mlruns/
+tensorboard/
+runs/
+logs/
+*.log
+
+# ---- Generated outputs ----
+outputs/
+outputs*/
+
+results/*
+!results/
+!results/README.md
+
+checkpoints/*
+!checkpoints/
+!checkpoints/README.md
+
+data/*
+!data/
+!data/README.md
+
+metadata/*
+!metadata/
+!metadata/README.md
+!metadata/chronos_datasets_names.txt
+!metadata/timesfm_data.txt
+
+experiments/*
+!experiments/
+!experiments/README.md
+
+# External upstream repos cloned into the workspace
+external/
+
+# ---- Large / binary artifacts ----
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.npy
+*.npz
+*.csv
+*.tsv
+*.pkl
+*.pickle
+*.arrow
+*.parquet
+*.feather
+*.tmp
+*.zip
+*.tar
+*.tar.gz
+*.tgz

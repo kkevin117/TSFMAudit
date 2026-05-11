@@ -1,0 +1,24 @@
+# Data root. Override with DATA_ROOT, GIFTEVAL_ROOT, or GIFTEVAL_PRETRAIN_ROOT.
+data_root: /path/to/data
+gifteval_root: /path/to/data/GIFT-Eval
+gifteval_pretrain_root: /path/to/data/GIFT-Eval-Pretrain
+
+# Model name or checkpoint identifier.
+model_key: moirai1
+model_name: Moirai1
+checkpoint: Salesforce/moirai-1.0-R-small
+
+# Optional local LOTSA-style metadata root for leakage-name matching.
+lotsa_data_root: /path/to/data/LOTSA
+
+# Training parameters used by sft_moirai1.py.
+batch_size: 4
+num_epochs: 10
+num_samples: 50
+context_length: 128
+prediction_length: 24
+
+# Output directory for summary.csv and epoch_metrics.csv.
+output_dir: outputs/moirai1_sft
+
+environment_reference: GIFT-Eval

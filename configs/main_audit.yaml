@@ -1,0 +1,36 @@
+# Main audit/evaluation settings. This file documents the default experiment setup.
+# The current Python entry points accept these settings through CLI flags and environment variables.
+
+results_root: outputs
+output_dir: outputs
+
+# Candidate TSFM models used by sft_audit_eval.py.
+candidates:
+  - chronos
+  - kairos
+  - moirai1
+  - moirai2
+  - timesfm
+  - tirex
+
+# Reference/debias models used by sft_audit_eval.py.
+references:
+  - scratch_cnn
+  - scratch_transformer
+  - stat
+  - visionts
+
+# Evaluation protocol.
+min_samples: 30
+n_repeats: 30
+random_state: 0
+clean_calib_frac: 0.8
+leaked_calib_ratio: 1.0
+group_split: family
+fp_mode: fp_k
+rule: S0
+select_metric: mcc
+
+# Output tables.
+main_audit_table: outputs/sft_audit_eval_table.csv
+baseline_audit_table: outputs/baseline_audit_eval_table.csv

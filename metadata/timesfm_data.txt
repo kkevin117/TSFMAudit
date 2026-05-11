@@ -1,0 +1,29 @@
+Synthetic
+
+Electricity (Hourly)
+
+Traffic (Hourly)
+
+Weather (10 Min)
+
+Favorita Sales (Daily)
+
+LibCity (15 Min)
+
+M4 hourly
+
+M4 daily
+
+M4 monthly
+
+M4 quarterly
+
+M4 yearly
+Wiki hourly
+Wiki daily
+Wiki weekly
+Wiki monthly
+Trends hourly
+Trends daily
+Trends weekly
+Trends monthly
