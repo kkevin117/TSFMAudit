@@ -1,12 +1,8 @@
-# Anonymous Code Release
+# TSFMAudit
 
-This repository accompanies a NeurIPS submission. It evaluates time-series
-foundation models (TSFMs) under an audit protocol based on short
-fine-tuning traces, reference / debias models, and FP-constrained threshold
-selection. The code is anonymized for double-blind review.
-
-Datasets, pretrained checkpoints, logs, and generated tables are **not**
-included.
+Official code release for TSFMAudit: Data Contamination Auditing in Forecasting Time Series Foundation Models.
+This repository implements the TSFMAudit auditing framework for detecting data contamination in forecasting time-series foundation models. The audit protocol uses short fine-tuning traces, and reference models, and false-positive-constrained threshold selection to evaluate whether target datasets may have been exposed during model pretraining.
+Datasets, pretrained checkpoints, logs, and generated tables are not included.
 
 ## 1. Environment
 
